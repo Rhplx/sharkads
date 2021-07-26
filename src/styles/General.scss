@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  --blue: #011e45;
+  --green: #00a044;
+  --gray: #7e848d;
+  --black: #001e45;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(4px);
+}
+
+// Slick Slider
+.slick-arrow {
+  background-color: var(--gray) !important;
+  border-radius: 100px;
+}

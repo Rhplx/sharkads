@@ -1,0 +1,54 @@
+@import "../Mixins.scss";
+
+.header {
+  background-color: var(--blue);
+  &__container {
+    @include fixed-container();
+    @include flex(space-between);
+    padding: 20px 0;
+  }
+  &__logo {
+    width: 100px;
+  }
+  &__list {
+    @include flex(center);
+    list-style: none;
+  }
+  &__item {
+    @include text(1.5rem, normal, 2.2rem);
+    color: white;
+    text-transform: uppercase;
+    margin: 0 20px;
+  }
+  &__mobile {
+    position: relative;
+    display: none;
+  }
+  &__mobile-icon {
+    width: 20px;
+  }
+  &__mobile-list {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: var(--blue);
+    color: white;
+    padding: 20px 30px;
+    list-style: none;
+  }
+  &__mobile-item {
+    margin: 20px 0;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+  @include for-size(tablet-portrait) {
+    &__list {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+  }
+}

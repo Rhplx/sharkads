@@ -1,0 +1,132 @@
+@import "../Mixins.scss";
+
+.about {
+  &__hero {
+    background-image: linear-gradient(#001e4586, #001e4586),
+      url("../../assets/images/about-bg.png");
+    padding: 150px 0;
+  }
+  &__hero-container {
+    @include fixed-container();
+  }
+  &__hero-data {
+    max-width: 900px;
+    width: 100%;
+  }
+  &__hero-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+    color: white;
+  }
+  &__hero-button {
+    @include primary-button();
+    margin-top: 20px;
+    &--green {
+      margin-right: 20px;
+      background-color: var(--green);
+    }
+    &--blue {
+      background-color: #1592e6;
+    }
+  }
+  &__info {
+    padding: 100px 0;
+  }
+  &__info-container {
+    @include fixed-container();
+  }
+  &__info-grid {
+    @include grid(1fr 1fr, 30px);
+    margin: 100px 0;
+  }
+  &__info-box {
+    @include flex(center);
+    flex-direction: column;
+    &--right {
+      align-items: flex-end;
+    }
+    &--left {
+      align-items: flex-start;
+    }
+  }
+  &__info-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+    color: #7e848d;
+  }
+  &__info-text {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+    }
+  }
+  &__info-picture {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 1000px;
+    display: block;
+  }
+  &__info-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include for-size(desktop) {
+    &__info-grid {
+      grid-template-columns: 1fr;
+      margin: 50px 0;
+    }
+    &__info-box {
+      &--right {
+        align-items: center;
+      }
+      &--left {
+        align-items: center;
+        grid-row: 1;
+      }
+    }
+    &__info-text {
+      &--right {
+        text-align: center;
+      }
+      &--left {
+        text-align: center;
+      }
+    }
+    &__info-title {
+      text-align: center;
+    }
+  }
+  @include for-size(tablet-landscape) {
+    &__hero-title,
+    &__info-title {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    &__info-text {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+    &__info-picture {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  @include for-size(phone-large) {
+    &__hero-title,
+    &__info-title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    &__info-text {
+      font-size: 1.2rem;
+      line-height: 2.1rem;
+    }
+  }
+}

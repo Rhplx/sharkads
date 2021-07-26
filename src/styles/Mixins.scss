@@ -1,0 +1,68 @@
+@mixin for-size($size) {
+  @if $size == phone-small {
+    @media (max-width: 320px) {
+      @content;
+    }
+  } @else if $size == phone-medium {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if $size == phone-large {
+    @media (max-width: 425px) {
+      @content;
+    }
+  } @else if $size == phone-xlarge {
+    @media (max-width: 535px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == big-desktop {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+}
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: ($columns);
+  grid-gap: ($gap);
+}
+@mixin text($size, $weight, $line-height) {
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin primary-button {
+  @include text(2rem, normal, 2.8rem);
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+}
+@mixin fixed-container() {
+  max-width: 1440px;
+  margin: auto;
+  width: 92%;
+}
+@mixin background() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

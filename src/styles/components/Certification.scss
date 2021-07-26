@@ -1,0 +1,61 @@
+@import "../Mixins.scss";
+.certification {
+  &__container {
+    @include fixed-container();
+    padding: 50px 0;
+  }
+  &__title {
+    @include text(6rem, bold, 6.9rem);
+    color: #33475b;
+    text-align: center;
+  }
+  &__stars {
+    width: 300px;
+    margin: auto;
+    display: block;
+  }
+  &__grid {
+    @include grid(1fr 1fr, 30px);
+    margin-top: 50px;
+  }
+  &__portatil {
+    width: 100%;
+  }
+  &__logos {
+    @include flex(center);
+    justify-content: flex-start;
+  }
+  &__logo {
+    width: 160px;
+  }
+  &__paragraph {
+    @include text(3.3rem, bold, 4rem);
+    margin: 30px 0;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    @include text(3.3rem, 300, 4rem);
+    margin: 20px 0;
+  }
+  @include for-size(desktop) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__logos {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__paragraph,
+    &__item {
+      text-align: center;
+    }
+  }
+  @include for-size(phone-xlarge) {
+    &__title {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+}

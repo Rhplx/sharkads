@@ -1,0 +1,108 @@
+@import "../Mixins.scss";
+
+.ads {
+  &__hero-container {
+    @include fixed-container();
+    padding: 80px 0;
+  }
+  &__hero-grid {
+    @include grid(1fr 1fr, 30px);
+    &--bottom {
+      margin-top: 100px;
+    }
+  }
+  &__hero-box {
+    @include flex(center);
+    flex-direction: column;
+    align-items: flex-start;
+    &--image {
+      align-items: center;
+    }
+  }
+  &__hero-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+  }
+  &__hero-text {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+  }
+  &__hero-button {
+    @include primary-button();
+    margin-top: 20px;
+    &--green {
+      margin-right: 20px;
+      background-color: var(--green);
+    }
+    &--gray {
+      background-color: var(--gray);
+    }
+    &--black {
+      background-color: var(--black);
+    }
+  }
+  &__hero-image {
+    width: 80%;
+  }
+  &__bullets-container {
+    @include grid(1fr 1fr, 30px);
+    padding: 100px 20px;
+  }
+  &__bullets-image {
+    width: 100%;
+    max-width: 200px;
+  }
+  &__bullets-item {
+    @include grid(auto 1fr, 30px);
+  }
+  &__bullets-data {
+    @include flex(center);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__bullets-title {
+    @include text(2.7rem, 300, 3.3rem);
+    color: #7e848d;
+    margin-bottom: 10px;
+  }
+  &__bullets-text {
+    @include text(2.2rem, 300, 2.7rem);
+  }
+
+  @include for-size(tablet-landscape) {
+    &__hero-grid {
+      grid-template-columns: 1fr;
+    }
+    &__hero-title {
+      font-size: 4rem;
+      line-height: 5rem;
+      text-align: center;
+      width: 100%;
+    }
+    &__hero-text,
+    &__bullets-title {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+    &__hero-actions {
+      width: 100%;
+      text-align: center;
+    }
+    &__hero-image {
+      width: 50%;
+    }
+    &__bullets-text {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
+    &__bullets-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  @include for-size(phone-large) {
+    &__bullets-item {
+      grid-template-columns: 1fr;
+    }
+  }
+}

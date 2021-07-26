@@ -1,0 +1,103 @@
+@import "../Mixins.scss";
+
+.contact {
+  &__hero {
+    background-image: linear-gradient(#001e45ba, #001e45ba),
+      url("../../assets/images/contact-hero.png");
+    padding: 80px 0;
+  }
+  &__hero-container {
+    @include fixed-container();
+    padding: 30px 0;
+  }
+  &__hero-grid {
+    @include grid(1fr 1fr, 30px);
+    &--bottom {
+      margin-top: 100px;
+    }
+  }
+  &__hero-box {
+    @include flex(center);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__hero-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+    color: white;
+  }
+  &__hero-text {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+    color: white;
+  }
+  &__hero-button {
+    @include primary-button();
+    margin-top: 20px;
+    &--green {
+      background-color: var(--green);
+    }
+  }
+  &__hero-form {
+    @include grid(1fr 1fr, 30px);
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+  }
+  &__hero-input,
+  &__hero-textarea {
+    @include text(1.6rem, 300, 2.3rem);
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 20px;
+    &--full {
+      grid-column: span 2;
+    }
+  }
+  &__hero-textarea {
+    grid-column: span 2;
+    min-height: 200px;
+  }
+  &__hero-submit {
+    @include primary-button();
+    background-color: #1592e6;
+    grid-column: span 2;
+  }
+  @include for-size(tablet-landscape) {
+    &__hero-grid {
+      grid-template-columns: 1fr;
+    }
+    &__hero-title {
+      font-size: 4rem;
+      line-height: 5rem;
+      text-align: center;
+      width: 100%;
+    }
+    &__hero-text {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+    &__hero-actions {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @include for-size(phone-large) {
+    &__hero-form {
+      grid-template-columns: 1fr;
+    }
+    &__hero-input,
+    &__hero-textarea {
+      &--full {
+        grid-column: span 1;
+      }
+    }
+    &__hero-textarea {
+      grid-column: span 1;
+    }
+    &__hero-submit {
+      grid-column: span 1;
+    }
+  }
+}

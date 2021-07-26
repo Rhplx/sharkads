@@ -1,0 +1,240 @@
+@import "../Mixins.scss";
+
+.home {
+  &__hero-container {
+    @include fixed-container();
+    padding: 80px 0;
+  }
+  &__hero-grid {
+    @include grid(1fr 1fr, 30px);
+    &--bottom {
+      margin-top: 100px;
+    }
+  }
+  &__hero-box {
+    @include flex(center);
+    flex-direction: column;
+    align-items: flex-start;
+    &--image {
+      align-items: center;
+    }
+  }
+  &__hero-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+  }
+  &__hero-text {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+  }
+  &__hero-button {
+    @include primary-button();
+    margin-top: 20px;
+    &--green {
+      margin-right: 20px;
+      background-color: var(--green);
+    }
+    &--gray {
+      background-color: var(--gray);
+    }
+    &--black {
+      background-color: var(--black);
+    }
+  }
+  &__hero-image {
+    width: 80%;
+  }
+  // Convert Area
+  &__convert {
+    background-color: var(--blue);
+  }
+  &__convert-container {
+    @include fixed-container();
+    padding: 40px 0 0;
+    color: white;
+  }
+  &__convert-title {
+    @include text(6rem, bold, 7rem);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__convert-subtitle {
+    @include text(3rem, 400, 3.9rem);
+    text-align: center;
+  }
+  &__convert-grid {
+    @include grid(repeat(4, 1fr), 30px);
+    margin: 50px;
+  }
+  &__convert-item {
+    @include flex(center);
+    flex-direction: column;
+  }
+  &__convert-icon {
+    width: 100%;
+    max-width: 135px;
+  }
+  &__convert-text,
+  &__convert-paragraph {
+    @include text(3rem, 400, 3.9rem);
+    text-align: center;
+  }
+  &__convert-paragraph {
+    max-width: 650px;
+    width: 100%;
+    margin: 40px auto;
+  }
+  &__convert-button {
+    @include primary-button();
+    background-color: #0086f8;
+    display: block;
+    margin: auto;
+  }
+  &__questions {
+    padding: 100px 0;
+  }
+  &__questions-container {
+    @include fixed-container();
+  }
+  &__questions-grid {
+    @include grid(1fr 1fr, 30px);
+  }
+  &__questions-box {
+    position: relative;
+    padding: 50px;
+  }
+  &__questions-title {
+    @include text(6rem, bold, 6.9rem);
+    color: #5f6368;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__questions-paragraph {
+    @include text(2.5rem, 400, 3.2rem);
+  }
+  &__questions-image {
+    position: absolute;
+    &--left {
+      width: 110px;
+      left: -100px;
+      top: 200px;
+    }
+    &--gray {
+      top: -34px;
+      left: -50px;
+      width: 200px;
+      z-index: -1;
+      opacity: 0.4;
+    }
+    &--right {
+      width: 110px;
+      right: -50px;
+      top: 200px;
+    }
+  }
+  // Campaign
+  &__campaign {
+    text-align: center;
+    padding: 100px 0;
+  }
+  &__campaign-image {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+  }
+  // Black and Orange
+  &__bo {
+    background-color: #001e45;
+    padding: 80px 0;
+    text-align: center;
+  }
+  &__bo-container {
+    @include fixed-container();
+  }
+  &__bo-image {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+  &__bo-text {
+    @include text(3rem, normal, 3.9rem);
+    color: white;
+  }
+  @include for-size(tablet-landscape) {
+    &__hero-grid {
+      grid-template-columns: 1fr;
+    }
+    &__hero-title {
+      font-size: 4rem;
+      line-height: 5rem;
+      text-align: center;
+      width: 100%;
+    }
+    &__hero-text {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+    &__hero-actions {
+      width: 100%;
+      text-align: center;
+    }
+    &__hero-image {
+      width: 50%;
+    }
+    &__convert-title {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    &__convert-subtitle {
+      font-size: 2rem;
+      line-height: 2.9rem;
+    }
+    &__convert-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__convert-text,
+    &__convert-paragraph {
+      font-size: 2rem;
+      line-height: 2.9rem;
+    }
+    &__questions-grid {
+      grid-template-columns: 1fr;
+    }
+    &__questions-title {
+      font-size: 4rem;
+      line-height: 4.9rem;
+    }
+    &__questions-paragraph {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+    &__questions-image {
+      &--left {
+        display: none;
+      }
+      &--right {
+        display: none;
+      }
+    }
+    &__bo-text {
+      font-size: 2rem;
+      line-height: 2.9rem;
+    }
+  }
+  @include for-size(phone-large) {
+    &__convert-grid {
+      grid-template-columns: 1fr;
+    }
+    &__convert-button {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+    }
+    &__questions-title {
+      font-size: 2rem;
+      line-height: 2.9rem;
+    }
+    &__campaign-image {
+      width: 100%;
+    }
+  }
+}

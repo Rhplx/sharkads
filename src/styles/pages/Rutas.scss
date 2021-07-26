@@ -1,0 +1,113 @@
+@import "../Mixins.scss";
+
+.routes {
+  &__hero {
+    background-image: linear-gradient(#001e45ba, #001e45ba),
+      url("../../assets/images/about-bg.png");
+    padding: 150px 0;
+  }
+  &__hero-container {
+    @include fixed-container();
+  }
+  &__hero-data {
+    max-width: 900px;
+    width: 100%;
+  }
+  &__hero-title {
+    @include text(6rem, bold, 7.5rem);
+    margin-bottom: 20px;
+    color: white;
+  }
+  &__hero-text {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+    color: white;
+  }
+  &__hero-button {
+    @include primary-button();
+    margin-top: 20px;
+    &--green {
+      margin-right: 20px;
+      background-color: var(--green);
+    }
+  }
+  &__bullets-container {
+    @include fixed-container();
+    padding: 100px 0;
+  }
+  &__bullets-title {
+    @include text(6rem, bold, 7.5rem);
+    color: #001e45;
+    text-align: center;
+    &--two {
+      margin-top: 100px;
+    }
+  }
+  &__bullets-grid {
+    @include grid(repeat(4, 1fr), 20px);
+    margin: 50px 0;
+  }
+  &__bullets-item {
+    box-shadow: 0px 3px 9px #00000070;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 10px solid black;
+    &--green {
+      border-bottom-color: #00a044;
+    }
+    &--blue {
+      border-bottom-color: #1592e6;
+    }
+    &--black {
+      border-bottom-color: black;
+    }
+    &--gray {
+      border-bottom-color: #7e848d;
+    }
+  }
+  &__bullets-name {
+    @include text(2.7rem, 300, 3.3rem);
+    margin-bottom: 20px;
+  }
+  &__bullets-text {
+    @include text(2.2rem, 300, 2.9rem);
+  }
+  &__bullets-holder-image {
+    width: 100%;
+  }
+  @include for-size(tablet-landscape) {
+    &__hero-title,
+    &__bullets-title {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    &__hero-text,
+    &__bullets-name {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+    &__bullets-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__bullets-text {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+    }
+  }
+  @include for-size(phone-large) {
+    &__hero-title,
+    &__bullets-title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    &__hero-text,
+    &__bullets-name {
+      font-size: 1.2rem;
+      line-height: 2.1rem;
+    }
+    &__bullets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

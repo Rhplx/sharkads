@@ -1,0 +1,22 @@
+@import "../Mixins.scss";
+
+.clients {
+  &__container {
+    @include fixed-container();
+    padding: 80px 0;
+    text-align: center;
+  }
+  &__title {
+    @include text(6rem, bold, 7.5rem);
+  }
+  &__image {
+    width: 60%;
+    margin: auto;
+  }
+  @include for-size(tablet-landscape) {
+    &__title {
+      font-size: 4rem;
+      line-height: 4.9rem;
+    }
+  }
+}
