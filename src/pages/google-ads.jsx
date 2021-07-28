@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../styles/pages/Google-Ads.scss"
 import Layout from "../components/Layout.jsx"
-import Seo from "../components/Seo"
+import Seo from "../components/seo.js"
 import PautaScreen from "../assets/images/pauta-image.png"
 
 export default function Ads() {
