@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[256],{1657:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return l}});var n=a(7294),r=a(2212),u=a(3751);function l(){return n.createElement(r.Z,null,n.createElement(u.Z,{title:"404: Nada por aqui"}),n.createElement("section",{className:"ads__hero"},n.createElement("h1",null,"No hay nada aqui")))}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-0f104a38d366b86260df.js.map
