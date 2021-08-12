@@ -9,14 +9,26 @@
   &__title {
     @include text(6rem, bold, 7.5rem);
   }
+  &__grid {
+    @include grid(repeat(4, 1fr), 20px);
+    margin-top: 20px;
+  }
   &__image {
-    width: 60%;
+    width: 150px;
     margin: auto;
   }
   @include for-size(tablet-landscape) {
     &__title {
       font-size: 4rem;
       line-height: 4.9rem;
+    }
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @include for-size(phone-large) {
+    &__grid {
+      grid-template-columns: 1fr;
     }
   }
 }

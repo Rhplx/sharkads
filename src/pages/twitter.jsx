@@ -4,6 +4,9 @@ import "../styles/pages/Google-Ads.scss"
 import Layout from "../components/Layout.jsx"
 import Seo from "../components/seo.js"
 import TwitterImage from "../assets/images/twitter.png"
+import TwitterAds1 from "../assets/images/twitterAds1.png"
+import TwitterAds2 from "../assets/images/twitterAds2.png"
+import TwitterAds3 from "../assets/images/twitterAds3.png"
 
 export default function LinkedIn() {
   return (
@@ -40,11 +43,7 @@ export default function LinkedIn() {
       <section className="ads__bullets">
         <div className="ads__bullets-container">
           <article className="ads__bullets-item">
-            <img
-              src={TwitterImage}
-              alt="Pauta"
-              className="ads__bullets-image"
-            />
+            <img src={TwitterAds1} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Tweets promocionados</h4>
               <p className="ads__bullets-text">
@@ -54,11 +53,7 @@ export default function LinkedIn() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img
-              src={TwitterImage}
-              alt="Pauta"
-              className="ads__bullets-image"
-            />
+            <img src={TwitterAds2} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Cuentas promocionadas</h4>
               <p className="ads__bullets-text">
@@ -69,11 +64,7 @@ export default function LinkedIn() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img
-              src={TwitterImage}
-              alt="Pauta"
-              className="ads__bullets-image"
-            />
+            <img src={TwitterAds3} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Tendencias promocionadas</h4>
               <p className="ads__bullets-text">

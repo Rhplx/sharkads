@@ -4,6 +4,10 @@ import "../styles/pages/Google-Ads.scss"
 import Layout from "../components/Layout.jsx"
 import Seo from "../components/seo.js"
 import PautaScreen from "../assets/images/pauta-image.png"
+import GoogleAds1 from "../assets/images/google-ads1.png"
+import GoogleAds2 from "../assets/images/google-ads2.png"
+import GoogleAds3 from "../assets/images/google-ads3.png"
+import GoogleAds4 from "../assets/images/google-ads4.png"
 
 export default function Ads() {
   return (
@@ -40,7 +44,7 @@ export default function Ads() {
       <section className="ads__bullets">
         <div className="ads__bullets-container">
           <article className="ads__bullets-item">
-            <img src={PautaScreen} alt="Pauta" className="ads__bullets-image" />
+            <img src={GoogleAds1} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Google search</h4>
               <p className="ads__bullets-text">
@@ -50,7 +54,7 @@ export default function Ads() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={PautaScreen} alt="Pauta" className="ads__bullets-image" />
+            <img src={GoogleAds2} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Google Shopping</h4>
               <p className="ads__bullets-text">
@@ -60,7 +64,7 @@ export default function Ads() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={PautaScreen} alt="Pauta" className="ads__bullets-image" />
+            <img src={GoogleAds3} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Google display</h4>
               <p className="ads__bullets-text">
@@ -71,7 +75,7 @@ export default function Ads() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={PautaScreen} alt="Pauta" className="ads__bullets-image" />
+            <img src={GoogleAds4} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Youtube</h4>
               <p className="ads__bullets-text">

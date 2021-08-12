@@ -111,86 +111,88 @@ export default function Index() {
           </button>
         </div>
       </section>
-      <section className="home__questions">
-        <div className="home__questions-container">
-          <div className="home__questions-grid">
-            <div className="home__questions-box"></div>
-            <div className="home__questions-box">
-              <img
-                src={BudgetImage}
-                alt="Budget"
-                className="home__questions-image home__questions-image--left"
-              />
-              <img
-                src={BudgetGrayImage}
-                alt="Budget"
-                className="home__questions-image home__questions-image--gray"
-              />
-              <h2 className="home__questions-title">
-                ¿No sabes qué pasa con tu Budget?
-              </h2>
-              <p className="home__questions-paragraph">
-                Invertir más en anuncios digitales no necesariamente quiere
-                decir más contactos o más clientes. <br /> <br /> Es importante
-                realizar un buen análisis del negocio para entender los canales
-                adecuados, los mensajes adecuados y los segmentos adecuados para
-                generar un mejor balance entre el costo y beneficio de cada
-                campaña.
-              </p>
+      <div className="background">
+        <section className="home__questions">
+          <div className="home__questions-container">
+            <div className="home__questions-grid">
+              <div className="home__questions-box"></div>
+              <div className="home__questions-box">
+                <img
+                  src={BudgetImage}
+                  alt="Budget"
+                  className="home__questions-image home__questions-image--left"
+                />
+                <img
+                  src={BudgetGrayImage}
+                  alt="Budget"
+                  className="home__questions-image home__questions-image--gray"
+                />
+                <h2 className="home__questions-title">
+                  ¿No sabes qué pasa con tu Budget?
+                </h2>
+                <p className="home__questions-paragraph">
+                  Invertir más en anuncios digitales no necesariamente quiere
+                  decir más contactos o más clientes. <br /> <br /> Es
+                  importante realizar un buen análisis del negocio para entender
+                  los canales adecuados, los mensajes adecuados y los segmentos
+                  adecuados para generar un mejor balance entre el costo y
+                  beneficio de cada campaña.
+                </p>
+              </div>
+            </div>
+            <div className="home__questions-grid">
+              <div className="home__questions-box">
+                <img
+                  src={AdsImage}
+                  alt="Ads"
+                  className="home__questions-image home__questions-image--right"
+                />
+                <img
+                  src={AdsGrayImage}
+                  alt="Ads Gray"
+                  className="home__questions-image home__questions-image--gray"
+                />
+                <h2 className="home__questions-title">
+                  ¿Tus Ads <br /> no funcionan?
+                </h2>
+                <p className="home__questions-paragraph">
+                  En Shark Ads somos consultores de negocios que nos centramos
+                  en entender tu empresa y cómo genera negocio. A través de esto
+                  generamos campañas mejor enfocadas con indicadores de
+                  desempeño bien planteados. Que nos permiten generar las
+                  optimizaciones necesarias para lograr mejores resultados.
+                </p>
+              </div>
+              <div className="home__questions-box"></div>
             </div>
           </div>
-          <div className="home__questions-grid">
-            <div className="home__questions-box">
-              <img
-                src={AdsImage}
-                alt="Ads"
-                className="home__questions-image home__questions-image--right"
-              />
-              <img
-                src={AdsGrayImage}
-                alt="Ads Gray"
-                className="home__questions-image home__questions-image--gray"
-              />
-              <h2 className="home__questions-title">
-                ¿Tus Ads <br /> no funcionan?
-              </h2>
-              <p className="home__questions-paragraph">
-                En Shark Ads somos consultores de negocios que nos centramos en
-                entender tu empresa y cómo genera negocio. A través de esto
-                generamos campañas mejor enfocadas con indicadores de desempeño
-                bien planteados. Que nos permiten generar las optimizaciones
-                necesarias para lograr mejores resultados.
-              </p>
-            </div>
-            <div className="home__questions-box"></div>
+        </section>
+        <Experience />
+        <section className="home__campaign">
+          <img
+            src={GoogleCampaign}
+            alt="Google"
+            className="home__campaign-image"
+          />
+        </section>
+        <Certification />
+        <section className="home__bo">
+          <div className="home__bo-container">
+            <img src={Logobg} alt="Logo" className="home__bo-image" />
+            <p className="home__bo-text">
+              Somos un grupo enfocado en brindar soluciones para la
+              transformación digital de las empresas, entendemos los negocios de
+              nuestros clientes para crear las herramientas y estrategias
+              adecuadas que les permitan generar un crecimiento importante según
+              sus objetivos. <br /> <br /> Contamos con experiencia trabajando
+              con más de 200 clientes y más de 20 industrias, de esta manera
+              aportamos experiencia y reducimos las curvas de aprendizaje de
+              incursionar en el mundo digital.
+            </p>
           </div>
-        </div>
-      </section>
-      <Experience />
-      <section className="home__campaign">
-        <img
-          src={GoogleCampaign}
-          alt="Google"
-          className="home__campaign-image"
-        />
-      </section>
-      <Certification />
-      <section className="home__bo">
-        <div className="home__bo-container">
-          <img src={Logobg} alt="Logo" className="home__bo-image" />
-          <p className="home__bo-text">
-            Somos un grupo enfocado en brindar soluciones para la transformación
-            digital de las empresas, entendemos los negocios de nuestros
-            clientes para crear las herramientas y estrategias adecuadas que les
-            permitan generar un crecimiento importante según sus objetivos.{" "}
-            <br /> <br /> Contamos con experiencia trabajando con más de 200
-            clientes y más de 20 industrias, de esta manera aportamos
-            experiencia y reducimos las curvas de aprendizaje de incursionar en
-            el mundo digital.
-          </p>
-        </div>
-      </section>
-      <Clients />
+        </section>
+        <Clients />
+      </div>
     </Layout>
   )
 }

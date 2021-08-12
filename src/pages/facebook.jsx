@@ -4,6 +4,12 @@ import "../styles/pages/Google-Ads.scss"
 import Layout from "../components/Layout.jsx"
 import Seo from "../components/seo.js"
 import FacebookImage from "../assets/images/facebook-page.png"
+import FacebookAds1 from "../assets/images/facebookAds1.png"
+import FacebookAds2 from "../assets/images/facebookAds2.png"
+import FacebookAds3 from "../assets/images/facebookAds3.png"
+import FacebookAds4 from "../assets/images/facebookAds4.png"
+import FacebookAds5 from "../assets/images/facebookAds5.png"
+import FacebookAds6 from "../assets/images/facebookAds6.png"
 
 export default function Facebook() {
   return (
@@ -43,7 +49,7 @@ export default function Facebook() {
         <div className="ads__bullets-container">
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds1}
               alt="Pauta"
               className="ads__bullets-image"
             />
@@ -57,7 +63,7 @@ export default function Facebook() {
           </article>
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds2}
               alt="Pauta"
               className="ads__bullets-image"
             />
@@ -72,7 +78,7 @@ export default function Facebook() {
           </article>
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds3}
               alt="Pauta"
               className="ads__bullets-image"
             />
@@ -87,7 +93,7 @@ export default function Facebook() {
           </article>
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds4}
               alt="Pauta"
               className="ads__bullets-image"
             />
@@ -102,7 +108,7 @@ export default function Facebook() {
           </article>
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds5}
               alt="Pauta"
               className="ads__bullets-image"
             />
@@ -116,7 +122,7 @@ export default function Facebook() {
           </article>
           <article className="ads__bullets-item">
             <img
-              src={FacebookImage}
+              src={FacebookAds6}
               alt="Pauta"
               className="ads__bullets-image"
             />

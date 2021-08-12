@@ -4,6 +4,10 @@ import "../styles/pages/Google-Ads.scss"
 import Layout from "../components/Layout.jsx"
 import Seo from "../components/seo.js"
 import LinkedImage from "../assets/images/Linkedin.png"
+import LinkedAds1 from "../assets/images/linkedAds1.png"
+import LinkedAds2 from "../assets/images/linkedAds2.png"
+import LinkedAds3 from "../assets/images/linkedAds3.png"
+import LinkedAds4 from "../assets/images/linkedAds4.png"
 
 export default function LinkedIn() {
   return (
@@ -40,7 +44,7 @@ export default function LinkedIn() {
       <section className="ads__bullets">
         <div className="ads__bullets-container">
           <article className="ads__bullets-item">
-            <img src={LinkedImage} alt="Pauta" className="ads__bullets-image" />
+            <img src={LinkedAds1} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Contenido patrocinado</h4>
               <p className="ads__bullets-text">
@@ -50,7 +54,7 @@ export default function LinkedIn() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={LinkedImage} alt="Pauta" className="ads__bullets-image" />
+            <img src={LinkedAds2} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Anuncios de texto</h4>
               <p className="ads__bullets-text">
@@ -60,7 +64,7 @@ export default function LinkedIn() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={LinkedImage} alt="Pauta" className="ads__bullets-image" />
+            <img src={LinkedAds3} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Anuncios Inmail</h4>
               <p className="ads__bullets-text">
@@ -71,7 +75,7 @@ export default function LinkedIn() {
             </div>
           </article>
           <article className="ads__bullets-item">
-            <img src={LinkedImage} alt="Pauta" className="ads__bullets-image" />
+            <img src={LinkedAds4} alt="Pauta" className="ads__bullets-image" />
             <div className="ads__bullets-data">
               <h4 className="ads__bullets-title">Anuncios dinámicos</h4>
               <p className="ads__bullets-text">

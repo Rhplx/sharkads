@@ -35,3 +35,9 @@ button:active {
   background-color: var(--gray) !important;
   border-radius: 100px;
 }
+.background {
+  background-image: url(../assets/images/general-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

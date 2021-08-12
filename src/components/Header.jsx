@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Logo from "../assets/images/logo.jpeg"
+import Logo from "../assets/images/white-logo.png"
 import MenuIcon from "../assets/images/white-menu.png"
 import "../styles/components/Header.scss"
 
